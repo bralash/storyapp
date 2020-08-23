@@ -26,12 +26,12 @@ class StoryLogic {
             'The mall is crowded. Teenagers hanging out at the game centers, couples moving in and out of the theatre, and me, standing in the middle of the mall, wondering what exactly to do and where exactly to go. I spotted an old school friend. Should I approach him? What if he asks if I’m married with kids?',
         firstChoice: 'Approach him',
         secondChoice: 'Allow him to ask question'),
-    Story(
-        //Scene 05
-        storyText:
-            'The coffee shop isn’t crowded, as expected, atmosphere soft, with a touch of calm. Looking around, I spot an empty seat close to the window. I order coffee, black. Watching the steam dance to the tune of my saddened heart, I reminisce about my experience in high school, how unpopular I was, how out of place, how mostly … wait, what do I do with the pic I just took?',
-        firstChoice: 'Delete the picture',
-        secondChoice: 'Save the picture'),
+    // Story(
+    //     //Scene 05
+    //     storyText:
+    //         'The coffee shop isn’t crowded, as expected, atmosphere soft, with a touch of calm. Looking around, I spot an empty seat close to the window. I order coffee, black. Watching the steam dance to the tune of my saddened heart, I reminisce about my experience in high school, how unpopular I was, how out of place, how mostly … wait, what do I do with the pic I just took?',
+    //     firstChoice: 'Delete the picture',
+    //     secondChoice: 'Save the picture'),
     // Story(
     //   // Scene 06
     //     storyText: 'I decided to play along; perhaps it’s not what I think. I smile back. “Well you look familiar too”, she replied. My smile broadened. “You look like my ex, after I left him.” Giving me a smirk she walked right out on my agape expression. I couldn’t believe my ears. I had just met Queen Savage herself - slamming my temples. Do I go after her and tell her my mind, or just forget the experience and let go?',
