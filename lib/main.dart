@@ -27,6 +27,7 @@ class _StoryPageState extends State<StoryPage> {
     return Container(
       child: Scaffold(
         body: Container(
+          color: Color(0xFFF5F6EE),
           padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
           constraints: BoxConstraints.expand(),
           child: SafeArea(
@@ -40,6 +41,7 @@ class _StoryPageState extends State<StoryPage> {
                         storyLogic.getStory(),
                         style: TextStyle(
                           fontSize: 22.0,
+                          color: Color(0xFF426064)
                         ),
                       ),
                     )),
@@ -50,13 +52,13 @@ class _StoryPageState extends State<StoryPage> {
                       FlatButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0),
-                            side: BorderSide(color: Color(0xFF273348))),
+                            side: BorderSide(color: Color(0xFFEEB49D))),
                         onPressed: () {
                           setState(() {
                             storyLogic.nextStory(1);
                           });
                         },
-                        color: Color(0xFF273348),
+                        color: Color(0xFFEEB49D),
                         child: Text(
                           storyLogic.getFirstChoice(),
                           style: TextStyle(fontSize: 16.0, color: Colors.white),
@@ -68,13 +70,13 @@ class _StoryPageState extends State<StoryPage> {
                       FlatButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0),
-                            side: BorderSide(color: Color(0xFFD4D4CC))),
+                            side: BorderSide(color: Color(0xFF23515D))),
                         onPressed: () {
                           setState(() {
                             storyLogic.nextStory(2);
                           });
                         },
-                        color: Color(0xFF4ca1b8),
+                        color: Color(0xFF23515D),
                         child: Text(
                           storyLogic.getSecondChoice(),
                           style: TextStyle(fontSize: 16.0, color: Colors.white),

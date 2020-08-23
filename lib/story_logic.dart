@@ -3,20 +3,28 @@ import 'story.dart';
 class StoryLogic {
   List<Story> _storyData = [
     Story(
+      // Scene 01
         storyText:
             'She was dressed in red, hair flowing down like a veil. She glanced at me as she walked past; such a sight to behold! Taking out my phone involuntarily, I stare at it for a moment, deciding whether to take a picture of the passing girl or to take a step to ask for her number.',
         firstChoice: 'Take her number',
         secondChoice: 'Take a picture'),
     Story(
+      // Scene 02
         storyText:
             'Getting off my seat, I walked towards her; walking slightly faster to catch up. The sun bounced its rays on my skin. I was hoping not to break a sweat in this mission. “Excuse me, hi. You look familiar. Do you live around the lakeside?” Turning around to my question, she poses a smile as though to tell me she’s figured out my trick. What do I do?',
         firstChoice: 'Play along',
         secondChoice: 'Change my strategy'),
     Story(
+      // Scene 03
         storyText:
-            'Zooming right into her gorgeousness, I take a pic of her in twilight mode; my HD cam capturing the smoothness of her skin and the flare of her gait. The emptiness that filled my heart like ablake hole resurfaced. Ouch! Such a lonely me! Rising from the bench. I take a step. But should it be towards the coffee shop or towards the mall?',
+            'Zooming right into her gorgeousness, I take a pic of her in twilight mode; my HD cam capturing the smoothness of her skin and the flare of her gait. The emptiness that filled my heart like ablake hole resurfaced. Ouch! Such a lonely me! Rising from the bench, I take a step. But should it be towards the coffee shop or towards the mall?',
         firstChoice: 'Go to the mall',
-        secondChoice: 'Go to the coffee shop')
+        secondChoice: 'Go to the coffee shop'),
+    // Story(
+    //   // Scene 06
+    //     storyText: 'I decided to play along; perhaps it’s not what I think. I smile back. “Well you look familiar too”, she replied. My smile broadened. “You look like my ex, after I left him.” Giving me a smirk she walked right out on my agape expression. I couldn’t believe my ears. I had just met Queen Savage herself - slamming my temples. Do I go after her and tell her my mind, or just forget the experience and let go?',
+    //     firstChoice: 'Take her to the'
+    // )
   ];
 
   int _storyNumber = 0;
