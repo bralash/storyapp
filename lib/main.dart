@@ -40,10 +40,8 @@ class _StoryPageState extends State<StoryPage> {
                     child: Center(
                       child: Text(
                         storyLogic.getStory(),
-                        style: TextStyle(
-                          fontSize: 22.0,
-                          color: Color(0xFF426064)
-                        ),
+                        style:
+                            TextStyle(fontSize: 22.0, color: Color(0xFF426064)),
                       ),
                     )),
                 Expanded(

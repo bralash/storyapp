@@ -77,43 +77,74 @@ class StoryLogic {
   }
 
   void nextStory(int choiceNumber) {
-    if (choiceNumber == 1 && _storyNumber == 0) {
-      _storyNumber = 1;
-    } else if (choiceNumber == 2 && _storyNumber == 0) {
-      _storyNumber = 2;
-    } else if (choiceNumber == 1 && _storyNumber == 1) {
-      _storyNumber = 5;
-    } else if (choiceNumber == 2 && _storyNumber == 1) {
-      _storyNumber = 6;
-    } else if (choiceNumber == 1 && _storyNumber == 2) {
-      _storyNumber = 3;
-    } else if (choiceNumber == 2 && _storyNumber == 2) {
-      _storyNumber = 4;
-    } else if (choiceNumber == 1 && _storyNumber == 3) {
-      _storyNumber = 12;
-    } else if (choiceNumber == 2 && _storyNumber == 3) {
-      _storyNumber = 11;
-    } else if (choiceNumber == 1 && _storyNumber == 4) {
-      _storyNumber = 12;
-    } else if (choiceNumber == 2 && _storyNumber == 4) {
-      _storyNumber = 11;
-    } else if (choiceNumber == 1 && _storyNumber == 5) {
-      _storyNumber = 3;
-    } else if (choiceNumber == 2 && _storyNumber == 5) {
-      _storyNumber = 10;
-    } else if (choiceNumber == 1 && _storyNumber == 6) {
-      _storyNumber = 3;
-    } else if (choiceNumber == 2 && _storyNumber == 6) {
-      _storyNumber = 10;
-    } else if (choiceNumber == 1 && _storyNumber == 7) {
-      _storyNumber = 4;
-    } else if (choiceNumber == 2 && _storyNumber == 7) {
-      _storyNumber = 10;
-    } else if (choiceNumber == 1 && _storyNumber == 8) {
-      _storyNumber = 4;
-    } else if (choiceNumber == 2 && _storyNumber == 8) {
-      _storyNumber = 10;
+    switch (_storyNumber) {
+      case 0:
+        choiceNumber == 1 ? _storyNumber = 1 : _storyNumber = 2;
+        break;
+      case 1:
+        choiceNumber == 1 ? _storyNumber = 5 : _storyNumber = 6;
+        break;
+      case 2:
+        choiceNumber == 1 ? _storyNumber = 3 : _storyNumber = 4;
+        break;
+      case 3:
+        choiceNumber == 1 ? _storyNumber = 12 : _storyNumber = 11;
+        break;
+      case 4:
+        choiceNumber == 1 ? _storyNumber = 12 : _storyNumber = 11;
+        break;
+      case 5:
+        choiceNumber == 1 ? _storyNumber = 3 : _storyNumber = 10;
+        break;
+      case 6:
+        choiceNumber == 1 ? _storyNumber = 3 : _storyNumber = 10;
+        break;
+      case 7:
+        choiceNumber == 1 ? _storyNumber = 4 : _storyNumber = 10;
+        break;
+      case 8:
+        choiceNumber == 1 ? _storyNumber = 4 : _storyNumber = 10;
+        break;
+      default:
+        _storyNumber = 0;
     }
+    // if (choiceNumber == 1 && _storyNumber == 0) {
+    //   _storyNumber = 1;
+    // } else if (choiceNumber == 2 && _storyNumber == 0) {
+    //   _storyNumber = 2;
+    // } else if (choiceNumber == 1 && _storyNumber == 1) {
+    //   _storyNumber = 5;
+    // } else if (choiceNumber == 2 && _storyNumber == 1) {
+    //   _storyNumber = 6;
+    // } else if (choiceNumber == 1 && _storyNumber == 2) {
+    //   _storyNumber = 3;
+    // } else if (choiceNumber == 2 && _storyNumber == 2) {
+    //   _storyNumber = 4;
+    // } else if (choiceNumber == 1 && _storyNumber == 3) {
+    //   _storyNumber = 12;
+    // } else if (choiceNumber == 2 && _storyNumber == 3) {
+    //   _storyNumber = 11;
+    // } else if (choiceNumber == 1 && _storyNumber == 4) {
+    //   _storyNumber = 12;
+    // } else if (choiceNumber == 2 && _storyNumber == 4) {
+    //   _storyNumber = 11;
+    // } else if (choiceNumber == 1 && _storyNumber == 5) {
+    //   _storyNumber = 3;
+    // } else if (choiceNumber == 2 && _storyNumber == 5) {
+    //   _storyNumber = 10;
+    // } else if (choiceNumber == 1 && _storyNumber == 6) {
+    //   _storyNumber = 3;
+    // } else if (choiceNumber == 2 && _storyNumber == 6) {
+    //   _storyNumber = 10;
+    // } else if (choiceNumber == 1 && _storyNumber == 7) {
+    //   _storyNumber = 4;
+    // } else if (choiceNumber == 2 && _storyNumber == 7) {
+    //   _storyNumber = 10;
+    // } else if (choiceNumber == 1 && _storyNumber == 8) {
+    //   _storyNumber = 4;
+    // } else if (choiceNumber == 2 && _storyNumber == 8) {
+    //   _storyNumber = 10;
+    // }
   }
 
   void restart() {
