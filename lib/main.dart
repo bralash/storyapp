@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Baloo'),
       debugShowCheckedModeBanner: false,
-      home: Books(),
+      home: StoryPage(),
     );
   }
 }
