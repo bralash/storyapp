@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'books.dart';
 import 'story_logic.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Baloo'),
       debugShowCheckedModeBanner: false,
-      home: StoryPage(),
+      home: Books(),
     );
   }
 }

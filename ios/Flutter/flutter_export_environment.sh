@@ -1,11 +1,15 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\Dev Tools\flutter\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Dev Tools\flutter\apps\storyapp"
+export "FLUTTER_ROOT=C:\xampp\htdocs\flutter"
+export "FLUTTER_APPLICATION_PATH=C:\xampp\htdocs\flutproj\story"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build\ios"
 export "OTHER_LDFLAGS=$(inherited) -framework Flutter"
-export "FLUTTER_FRAMEWORK_DIR=C:\Dev Tools\flutter\flutter\bin\cache\artifacts\engine\ios"
+export "FLUTTER_FRAMEWORK_DIR=C:\xampp\htdocs\flutter\bin\cache\artifacts\engine\ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
 export "FLUTTER_BUILD_NUMBER=1"
+export "DART_OBFUSCATION=false"
+export "TRACK_WIDGET_CREATION=false"
+export "TREE_SHAKE_ICONS=false"
+export "PACKAGE_CONFIG=.packages"
