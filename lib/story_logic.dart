@@ -172,7 +172,7 @@ class StoryLogic {
         choiceNumber == 1 ? _storyNumber = 11 : _storyNumber = 12;
         break;
       case 11:
-        choiceNumber == 1 ? _storyNumber = 15 : _storyNumber = 19;
+        choiceNumber == 1 ? _storyNumber = 15 : _storyNumber = 18;
         break;
       case 12:
         choiceNumber == 1 ? _storyNumber = 14 : _storyNumber = 13;
@@ -184,7 +184,7 @@ class StoryLogic {
         choiceNumber == 1 ? _storyNumber = 16 : _storyNumber = 15;
         break;
       case 15:
-        choiceNumber == 1 ? _storyNumber = 18 : _storyNumber = 19;
+        choiceNumber == 1 ? _storyNumber = 17 : _storyNumber = 18;
         break;
       case 16:
         choiceNumber == 1 ? _storyNumber = 0 : restart();
