@@ -158,6 +158,7 @@ class StoryLogic {
   ];
 
   int _storyNumber = 1;
+  bool endStory = false;
 
   String getStory() {
     return _storyData[_storyNumber - 1].storyText;

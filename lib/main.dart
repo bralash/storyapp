@@ -25,32 +25,34 @@ class StoryPage extends StatefulWidget {
 class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        body: Container(
-          color: Color(0xFFF5F6EE),
-          padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
-          constraints: BoxConstraints.expand(),
-          child: SafeArea(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Expanded(
-                    flex: 12,
-                    child: Center(
-                      child: Text(
-                        storyLogic.getStory(),
-                        style:
-                            TextStyle(fontSize: 22.0, color: Color(0xFF426064)),
-                      ),
-                    )),
-                Expanded(
+    return Scaffold(
+      body: Container(
+        color: Color(0xFFF5F6EE),
+        padding: EdgeInsets.symmetric(horizontal: 15.0),
+        constraints: BoxConstraints.expand(),
+        child: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Expanded(
+                  flex: 12,
+                  child: Center(
+                    child: Text(
+                      storyLogic.getStory(),
+                      style:
+                          TextStyle(fontSize: 20.0, color: Color(0xFF426064)),
+                    ),
+                  )),
+              Visibility(
+                visible: !storyLogic.endStory,
+                child: Expanded(
+                  flex: 1,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       FlatButton(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
+                            borderRadius: BorderRadius.circular(5.0),
                             side: BorderSide(color: Color(0xFFEEB49D))),
                         onPressed: () {
                           setState(() {
@@ -68,7 +70,7 @@ class _StoryPageState extends State<StoryPage> {
                       ),
                       FlatButton(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
+                            borderRadius: BorderRadius.circular(5.0),
                             side: BorderSide(color: Color(0xFF23515D))),
                         onPressed: () {
                           setState(() {
@@ -83,10 +85,31 @@ class _StoryPageState extends State<StoryPage> {
                       ),
                     ],
                   ),
-                  flex: 2,
-                )
-              ],
-            ),
+                ),
+              ),
+              Visibility(
+                visible: storyLogic.endStory,
+                child: Expanded(
+                    flex: 1,
+                    child: FlatButton(
+                      shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5.0),
+                            side: BorderSide(color: Colors.red)),
+                      color: Colors.red,
+                      child: Text(
+                        'End Story',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0
+                        ),
+                      ),
+                      onPressed: () {},
+                    )),
+              ),
+              SizedBox(
+                height: 10.0,
+              )
+            ],
           ),
         ),
       ),
